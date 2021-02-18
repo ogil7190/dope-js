@@ -1,0 +1,18 @@
+//Message class.
+.message {
+    
+    //Sample modifier.
+    &--sample {
+        @extend .fade-in-animate;
+
+        box-sizing: border-box;
+        color: $white-ffffff;
+        cursor: default;
+        font: {
+            family: $font-family-default;
+            size: $font-size-24;
+        };
+        text-align: center;
+        width: 100%;
+    }
+}

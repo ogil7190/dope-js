@@ -1,0 +1,14 @@
+.container--logo {
+    display: flex;
+    width : 100%;
+}
+
+.logo {
+    @extend .fadeIn, .first;
+    margin : rem(5);
+    &--image {
+        width : rem(72);
+        height: rem(72);
+        object-fit: contain;
+    }
+}

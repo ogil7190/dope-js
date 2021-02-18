@@ -1,0 +1,46 @@
+// ==========================================================================
+// = Global Variables
+// ==========================================================================
+
+
+//Base font sizes used for calculation across the application.
+// ===========================================================
+ $base-font-size: 10;
+ $base-font-size-px: 10 * 1px;
+
+//Font family
+// =================
+$font-family-default: 'Roboto', 'Arial';
+
+//Font sizes
+// =================
+$font-size-10: rem(10);
+$font-size-12: rem(12);
+$font-size-14: rem(14);
+$font-size-16: rem(16);
+$font-size-18: rem(18);
+$font-size-20: rem(20);
+$font-size-22: rem(22);
+$font-size-24: rem(24);
+$font-size-26: rem(26);
+$font-size-28: rem(28);
+$font-size-30: rem(30);
+
+//Colors
+// =================
+// $primary-color: #2f3542;
+// $secondary-color: #e74c3c;
+// $tertiary-color: #f39c12; 
+
+$black : #333;
+$cement-gray : #666;
+
+$primary-color: #2f3542;
+$secondary-color: #c64141;
+$tertiary-color: #e1e1e1;
+$green-palette-4: #ACD1B6;
+$green-palette-5: #e1e1e1;
+
+
+//Shades of white.
+$white-ffffff: #ffffff;

@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Dope.Js</title>
+ </head>
+
+ <body>
+  <div class="OGIL">
+    <variable name = "x" value = "[]" type="array"></variable>
+    <div>
+        <variable name = "y" value = "[1, 2, 3]" type="array"></variable>
+        <loop>
+
+        </loop>
+        
+        <if left-variable = ' y ' right-variable = 'x'>
+          <variable name = "z" value = "1" type="number"></variable>
+          <if variable="z" value="1" condition="le" type="number">
+            <div>
+              X Equals Y
+            </div>
+          </if>
+        </if>
+
+        <js>
+
+        </js>
+
+        <if left-variable = 'y' condition="ne" right-variable = 'x'>
+          <div>
+            X Not Equals Y
+          </div>
+        </if>
+        
+        <button>
+          Something
+          <click>
+            <variable name ="x" value='2' type="number"></variable>
+          </click>
+        </button>
+    </div>
+  </div>
+ </body>
+
+ </html>

@@ -1,0 +1,102 @@
+.container--login {
+    display: flex;
+    flex : 1;
+    flex-direction: column;
+    background-color: rgba($secondary-color, 0.2);
+    align-items: center;
+    
+}
+
+.container--form{
+    display: flex;
+    width : 100%;
+    height : 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form--content{
+    width : 50%;
+    height : 50%;
+    display: flex;
+    flex-direction: column;
+    margin : rem(10);
+    padding : rem(10);
+    border-radius: rem(10);
+    // background-color: #999;
+}
+
+
+
+.header{
+    @extend .fadeIn,.first;
+    font: {
+        family: $font-family-default;
+        size: $font-size-26;
+    };
+    color : #333;
+    text-align: center;
+}
+
+.form {
+    &--input{
+        display: flex;
+        flex-direction: column;
+
+        &--text{
+            @extend .fadeIn,.second;
+            
+            padding : rem(8);
+            margin : rem(10);
+            margin-bottom: rem(5);
+            border-radius: rem(25);
+            border-width: 0;
+            font-size: $font-size-14;
+        }
+    }
+
+    &--error{
+        font-size: $font-size-14;
+        margin-left: rem(20);
+        color : $secondary-color;
+        margin-bottom: rem(5);
+        margin-top: rem(5);
+    }
+
+    &--action{
+        // display: flex;
+        // flex-direction: column;
+        text-align: center;
+        &--button{
+            @extend .fadeIn,.third;
+            margin : rem(10);
+            font-size: $font-size-16;
+            padding: rem(8);
+            padding-right: rem(25);
+            padding-left: rem(25);
+            border-radius: rem(25);
+            border-width: 0;
+            background-color: black;
+            color : #fff;
+        }
+
+        &--button:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+
+        &--link{
+
+            &--container{
+                @extend .fadeIn,.fourth;
+                font-size: rem(16);
+                text-align: center;
+                
+                &--item{
+                    text-decoration: none;
+                    color : $primary-color;
+                }
+            }
+        }
+    }
+}

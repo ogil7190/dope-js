@@ -1,0 +1,40 @@
+@-webkit-keyframes scaleMessage {
+    from {
+    -webkit-transform: none;
+    transform: none;
+    }
+  
+    to {
+    -webkit-transform: scale(1.01,1.01);
+    transform: scale(1.01,1.01);
+    }
+  }
+
+  @keyframes scaleMessage {
+    from {
+      -webkit-transform: none;
+      transform: none;
+      }
+    
+      to {
+      -webkit-transform: scale(1.01,1.01);
+      transform: scale(1.01,1.01);
+      }
+  }
+  .scaleMessage1 {
+    -webkit-animation-name: scaleMessage;
+    animation-name: scaleMessage;
+  }
+  
+    .scale-message-animate {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    
+    .scale-message1 {
+      -webkit-animation-name: scaleMessage;
+      animation-name: scaleMessage;
+    }
+  

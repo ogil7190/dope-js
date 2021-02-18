@@ -1,0 +1,93 @@
+.container--display {
+    display: flex;
+    flex : 1;
+    background-color: $secondary-color;
+    justify-content: center;
+    align-items: center; 
+
+    .container--message {
+        @extend .fadeIn, .first;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        background-color: $tertiary-color;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow:2px 1px 2px 1px rgb(170, 168, 168);    
+    
+        .message--title {
+            @extend .fadeIn, .second;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .title--info {
+                box-sizing: border-box;
+                font: {
+                    family: $font-family-default;
+                    size: $font-size-26;
+                };
+                padding : 10px 10px 10px 10px;
+            }
+            hr {
+                width:97%;
+            }
+        }
+        .message--content {
+            display: flex;
+            flex-direction: column;
+            height:auto;
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0 10px 0;
+
+            .message--info {
+                @extend .fadeIn, .third;
+                box-sizing: border-box;
+                text-align: center;
+                font: {
+                    family: $font-family-default;
+                    size: $font-size-18;
+                };
+                color: black;
+                padding : 10px 10px 10px 10px;
+                line-height: 1.2;
+                
+                .email--info {
+                    font: {
+                        family: $font-family-default;
+                        size: $font-size-16;
+                    };
+                    color: rgb(11, 11, 105);
+                }
+            }
+        }
+
+        .message--button {
+            @extend .fadeIn, .third;
+            width: 30%;
+            height: auto;
+            background-color: black;
+            color: $white-ffffff;
+            text-align: center;
+            font: {
+                family: $font-family-default;
+                size: $font-size-16;
+            };
+            padding:7px;
+            border-radius:25px;
+            margin-bottom: 20px;
+        }
+
+        .message--button:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+}
